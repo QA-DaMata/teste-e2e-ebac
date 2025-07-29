@@ -1,5 +1,4 @@
-import produtosPage from "../support/page_objects/produtos.page";
-
+import produtosPage from "../page_objects/produtos.page";
 
 Cypress.Commands.add('realizarPedido', (locPorduto) => {
     cy.fixture('produtos').then(res => {

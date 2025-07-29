@@ -43,8 +43,5 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.realizarCheckout(nome, sobrenome, nomeEmpresa, endereco, cidade, cep, telefone, email).then(() => {
             cy.get(msgCheckout).should('contain', 'Obrigado. Seu pedido foi recebido.')
         })
-
     });
-
-
 })
